@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+//define background color  #25274D
+$bg-main-color: #141E30;
+$bg-grad-color: #243B55;
+
+$cover-text-color: #AAABB8;
+$paragraph-color: #424242;
+
+h1, h4 {
+    font-family: 'Open Sans';
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+nav {
+    
+    a {
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    li{
+        padding-right:15px;
+       }
+    background: $bg-main-color;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $bg-grad-color, $bg-main-color);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $bg-grad-color, $bg-main-color);
+}
+
+.cover {
+    display:block;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background: $bg-main-color;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $bg-grad-color, $bg-main-color);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $bg-grad-color, $bg-main-color);
+
+    padding-top: 10%;
+    padding-left: 5%;
+
+    p {
+        margin-top: 5%;
+        max-width: 350px;
+        color: $cover-text-color;
+        font-family: "Open Sans";
+    }
+}
+
+.paragraph {
+    color: $paragraph-color;
+    font-family: "Open Sans";
+    padding-top: 24px;
+    font-size: 16px;
+
+    padding: 16px 5% 0px 5%;
+}
