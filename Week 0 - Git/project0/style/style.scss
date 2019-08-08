@@ -7,15 +7,20 @@ $bg-grad-color: #243B55;
 $cover-text-color: #AAABB8;
 $paragraph-color: #424242;
 
-h1, h4 {
+h1, h2, h3, h4 {
     font-family: 'Open Sans';
-    color: white;
 }
 
 h1 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 48px;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
 }
 
 h4 {
@@ -55,13 +60,70 @@ nav {
         color: $cover-text-color;
         font-family: "Open Sans";
     }
+
+    h1, h4 {
+    color: white;
+    }
+
+}
+
+.page-content {
+    padding: 64px 5% 0px 5%;
+    font-family: "Open Sans";
 }
 
 .paragraph {
     color: $paragraph-color;
     font-family: "Open Sans";
-    padding-top: 24px;
     font-size: 16px;
 
     padding: 16px 5% 0px 5%;
+}
+
+.my-list-group {
+    width: 50%;
+    display: inline-block;
+}
+  
+.left .list-group-item {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.right {
+  float: right;
+}
+    
+.right .list-group-item {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.logo-img {
+    float: left;
+    margin-right: 16px;
+}
+  
+
+.categories {
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #AAABB8; /* this draws the table border  */ 
+}
+
+.categories td {
+    border: 1px solid #AAABB8;
+    border-radius: px;
+    vertical-align: center;
+    height: 100px;
+    width: 250px;
+    padding: 16px;
+}
+
+.categories div {
+    display:flex; 
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: center;
 }
