@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans";
 }
 
@@ -101,6 +101,7 @@ nav li {
   /* hide standard table (collapsed) border */
   box-shadow: 0 0 0 1px #AAABB8;
   /* this draws the table border  */
+  margin-top: 32px;
 }
 
 .categories td {
